@@ -14,10 +14,10 @@ def img_to_base64(path):
 # =========================
 # CARREGAR IMAGENS DO PC
 # =========================
-mars = img_to_base64("assets/planets/mars.png")
-earth = img_to_base64("assets/planets/earth.png")
-saturn = img_to_base64("assets/planets/saturn.png")
-jupiter = img_to_base64("assets/planets/jupiter.png")
+mars = img_to_base64("web/assets/planets/mars.png")
+earth = img_to_base64("web/assets/planets/earth.png")
+saturn = img_to_base64("web/assets/planets/saturn.png")
+jupiter = img_to_base64("web/assets/planets/jupiter.png")
 
 # =========================
 # CONFIG
