@@ -127,7 +127,7 @@ st.divider()
 # =========================
 # MODELO
 # =========================
-data = joblib.load("model/exospaceai.pkl")
+data = joblib.load("web/model/exospaceai.pkl")
 model = data["model"]
 features = data["features"]
 imputer = data.get("imputer", None)
