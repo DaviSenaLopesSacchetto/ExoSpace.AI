@@ -140,13 +140,13 @@ st.header("🔢 Parâmetros")
 col1, col2 = st.columns(2)
 
 with col1:
-    pl_bmasse = st.slider("Massa do planeta", 0.01, 20.0, 1.0)
-    pl_orbsmax = st.slider("Semi-eixo maior da órbita", 0.01, 10.0, 1.0)
+    pl_bmasse = st.slider("Massa do planeta", 0.0001, 1000.0, 1.0)
+    pl_orbsmax = st.slider("Semi-eixo maior da órbita", 0.001, 100.0, 1.0)
     pl_orbper = st.slider("Período orbital", 1, 2000, 365)
 
 with col2:
-    pl_bmasse = st.number_input("Massa (manual)", 0.01, 20.0, pl_bmasse, format="%.4f")
-    pl_orbsmax = st.number_input("Órbita (manual)", 0.01, 10.0, pl_orbsmax, format="%.4f")
+    pl_bmasse = st.number_input("Massa (manual)", 0.0001, 1000.0, pl_bmasse, format="%.4f")
+    pl_orbsmax = st.number_input("Órbita (manual)", 0.001, 100.0, pl_orbsmax, format="%.4f")
     pl_orbper = st.number_input("Período (manual)", 1, 2000, pl_orbper)
 
 st.header("🌟 Estrela")
@@ -156,7 +156,7 @@ col3, col4 = st.columns(2)
 with col3:
     st_mass = st.slider("Massa da estrela", 0.1, 3.0, 1.0)
     st_rad = st.slider("Raio da estrela", 0.1, 5.0, 1.0)
-    st_teff = st.slider("Temperatura (K)", 2000, 10000, 5800)
+    st_teff = st.slider("Temperatura (K)", 2000, 10000, 10000)
 
 with col4:
     st_mass = st.number_input("Massa (manual)", 0.1, 3.0, st_mass, format="%.3f")
